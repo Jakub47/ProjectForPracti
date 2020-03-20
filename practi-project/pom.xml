@@ -12,6 +12,7 @@
 	<artifactId>practi-project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>practi-project</name>
+	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

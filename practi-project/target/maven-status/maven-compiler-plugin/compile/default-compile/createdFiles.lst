@@ -1,0 +1,8 @@
+pl\Bergmann\practiproject\models\BookRepository.class
+pl\Bergmann\practiproject\models\Book.class
+pl\Bergmann\practiproject\controllers\BookController.class
+pl\Bergmann\practiproject\initalization\DataLoader.class
+pl\Bergmann\practiproject\PractiProjectApplication.class
+pl\Bergmann\practiproject\customexceptions\BookNotFoundException.class
+pl\Bergmann\practiproject\models\BookService.class
+pl\Bergmann\practiproject\resources\BookResource.class
