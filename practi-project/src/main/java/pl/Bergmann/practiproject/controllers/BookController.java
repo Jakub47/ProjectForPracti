@@ -33,6 +33,11 @@ public class BookController
     @Value( "${pageSize}" )
     private int pageSize;
 
+    /**
+     * Return books in given page
+     * @param page page
+     * @return
+     */
     @GetMapping
     public ResponseEntity<CollectionModel<BookResource>> all(@RequestParam(value = "page", defaultValue = "0") int page)
     {

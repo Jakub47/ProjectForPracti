@@ -9,6 +9,9 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @Getter
+/**
+ * Helper class for adding links to book
+ */
 public class BookResource extends RepresentationModel
 {
     private final Book book;

@@ -16,6 +16,9 @@ public class DataLoader  implements ApplicationRunner
     @NonNull
     private BookRepository bookRepository;
 
+    /**
+     * The method inflating the role of a seeder
+     */
     @Override
     public void run(ApplicationArguments args) throws Exception
     {

@@ -40,13 +40,17 @@ class BookControllerTests
 	@Test
 	void getBook() throws Exception
 	{
-		prepareBook();
+		prepareBook(); //initialize book
 		when(bookService.findById(1)).thenReturn(Optional.of(book));
 		ResultActions result = mvc.perform(get("/books/1"));
 		result.andExpect(status().isOk());
 		verifyJson(result);
 	}
 
+	/**
+	 * Checks whter json object along with links are correct
+	 * @param action Result containing json
+	 */
 	private void verifyJson(final ResultActions action) throws Exception {
 		action
 				.andExpect(jsonPath("book.id", is(book.getId())))
@@ -64,12 +68,5 @@ class BookControllerTests
 	private void prepareBook()
 	{
 		book = new Book("title1","author1","9788365315014",442,4.5f);
-	}
-
-	private List<Book> prepareBooksMock()
-	{
-		List<Book> books = new ArrayList<>();
-		books.add(new Book("title1","author1","9788365315014",442,4.5f));
-		return books;
 	}
 }
